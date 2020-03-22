@@ -1,0 +1,27 @@
+{
+  "name": "bamazon",
+  "version": "1.0.0",
+  "description": "This is a BAMAZON application!",
+  "main": "app.js",
+  "dependencies": {
+    "inquirer": "^7.1.0",
+    "mysql": "^2.18.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "Select an option to begin "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/es9156967/Bamazon.git"
+  },
+  "keywords": [
+    "Bamazon"
+  ],
+  "author": "Eduardo Sanchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/es9156967/Bamazon/issues"
+  },
+  "homepage": "https://github.com/es9156967/Bamazon#readme"
+}

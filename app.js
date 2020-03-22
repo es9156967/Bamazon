@@ -30,7 +30,21 @@ var promptStart = function () {
         if(answers.Next_Section === "View Departments"){
             console.log ("\n--------------")
             console.log("Current Departments:")
-            console.log("\n--------------")
+            console.log("\n--------------");
+            connection.query(
+                "SELECT * FROM departments" , 
+                function(error, response){
+                    if(error) throw error;
+                    for (var i = 0; i < response.length; i++ ){
+                        console.log(
+                            response[i].id +
+                            " | " +
+                            response[i].first_name +
+                            " " +
+                            response[i].last_name )
+                    }
+                }
+            )
         }
     })
 }
